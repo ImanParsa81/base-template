@@ -10,6 +10,7 @@ function b2wall_css()
 {
     $version = "1.0";
 
+    wp_enqueue_style("nirweb_b2wall_css_style", get_stylesheet_uri(), array(), $version);
     wp_enqueue_style("b2wall_css_bootstrap", URL . "assets/css/general/bootstrap-grid.min.css", array(), $version, false);
     wp_enqueue_style("b2wall_css_swiper", URL . "assets/css/general/swiper-bundle.min.css", array(), $version, false);
 }
