@@ -1,0 +1,15 @@
+مرحله اول
+
+فایل js را در فایل function لود کن
+    wp_enqueue_script("change_status_Queries_js", URL . "tools/toast/toast.js", array(), $version, true);
+
+
+مرحله دوم
+در هدر اینو فایل php توست را انکلود کن
+    <?php
+        include_once PATH."tools/toast/toast.php";
+    ?>
+
+مرحله اخر
+استفاده کن
+    nirweb_panel_toast('success', 'عملیات موفق', 'محصول با موفقیت ذخیره شد.');
